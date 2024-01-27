@@ -1,4 +1,41 @@
-* {
-    margin: 0;
-    padding: 0;
+html {
+    box-sizing: border-box;
+    font-size: 100%;
 }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.topNav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: #fff; /* Example color, adjust as needed */
+    padding: 10px 20px;
+    color: #151515;
+}
+
+.topnav-logo {
+    height: 60px; /* Adjust the size of the logo */
+    width: auto;
+}
+
+.topNav a {
+    color: #151515;
+    text-decoration: none;
+    margin-left: 5px; /* Space between links */
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.topNav a:hover {
+    color: #4ee1a0; /* Change color on hover for visual feedback */
+}
+
+
