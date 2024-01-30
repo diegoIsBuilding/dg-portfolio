@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Diego Garcia</title>
     <link rel="stylesheet" href="/static/css/styles.css">
+    <script type="text/javascript" src="/static/js/index.js"></script>
 </head>
 <body>
-    <header>
+    <header class="navigation-header">
         <!-- Navigation Bar -->
-        <nav class="navbar">
+        <nav>
+            <div class="logo-container">
+                <a href="/templates/index.html">
+                    <h1>Diego Garcia</h1>
+                </a>
+            </div>
+            <div class="navigation-items" id="navigation-items">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-link"><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu">
+                <span id="open-menu">&#9776</span>
+                <span id="close-menu">&#x2716</span>
+            </div>
+        </nav>
+        <!-- <nav class="navbar">
             <div class="logo">Your Logo</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -22,7 +42,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-        </nav>
+        </nav> -->
         
     </header>
     <section id="about">
@@ -40,6 +60,5 @@
             <button type="submit">Send</button>
         </form>
     </section>
-    <script src="script.js"></script>
 </body>
 </html>
