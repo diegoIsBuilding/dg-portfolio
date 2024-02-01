@@ -30,6 +30,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 .logo-container > a {
     color: ghostwhite;
@@ -88,6 +90,22 @@ nav {
 /* ========================================
 ======================================== */
 
+/* ========================================
+==============Hero Section============== */
+#hero-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    width: 100%;
+    
+}
+
+#hero-section div {
+    flex: 1;
+}
+
+/* ========================================
+======================================== */
 
 
 
