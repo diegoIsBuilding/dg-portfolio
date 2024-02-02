@@ -12,7 +12,7 @@ html {
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #151515;
+    /* background-color: #151515; */
 }
 /* ========================================
 ===========Navigation Menu============== */
@@ -97,11 +97,66 @@ nav {
     align-items: center;
     margin-bottom: 5rem;
     width: 100%;
+    border-style: solid;
+    border-color: white;
+    background-color: #151515;
     
 }
 
 #hero-section div {
     flex: 1;
+}
+.hero-left {
+    border-style: solid;
+    border-color: red;
+    /* display: flex;
+    flex-direction: column; */
+    padding-right: 40px;
+}
+
+.hero-left h1 {
+    font-size: 2.5rem;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    /* padding-left: 15%; */
+    margin: 0;
+}
+
+.hero-left h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    /* padding-left: 15%; */
+    border-style: solid;
+    border-color: white;
+    margin: 0;
+}
+.hero-left button {
+    border-style: solid;
+    border-color: blue;
+    padding: 10px 15px;
+    background: pink;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3 all ease;
+    border-radius: 20px;
+}
+
+.hero-left span {
+    border-style: solid;
+    border-color: white;
+}
+
+.hero-right {
+    border-style: solid;
+    border-color: white;
+}
+
+.hero-right img {
+    border-style: solid;
+    border-color: white;
 }
 
 /* ========================================
