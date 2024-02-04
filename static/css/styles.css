@@ -30,8 +30,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 .logo-container > a {
     color: ghostwhite;
@@ -59,6 +59,97 @@ nav {
     font-weight: 800;
     color: white;
 }
+
+/* ========================================
+==============Hero Section============== */
+#hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5em;
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    background-color: #151515;
+    padding-left: 6em;
+    padding-right: 6em;
+    
+}
+
+#hero-section div {
+    flex: 1;
+}
+.hero-left {
+    border-style: solid;
+    border-color: red;
+    
+}
+.hero-left h1 {
+    font-size: 2.5rem;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    margin: 0;
+}
+
+.hero-left h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    margin: 0;
+}
+.links-container {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 1em;
+}
+
+.hero-left button {
+    border-style: solid;
+    border-color: blue;
+    padding: 1em;
+    background: pink;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3 all ease;
+    border-radius: 20px;
+    width: 100px;
+    margin-right: 1em;
+
+}
+
+.hero-left span {
+    border-style: solid;
+    border-color: white;
+    margin-right: 1em;
+
+    background: lightblue;
+    border-radius: 50%;
+
+    width: 40px; /* Adjust based on your design */
+    height: 40px; /* Make it equal to width to get a circle */
+    display: flex; /* To center the icon inside */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Optional, adjust based on your design */
+}
+
+.hero-right {
+    border-style: solid;
+    border-color: white;
+}
+
+.hero-right img {
+    border-style: solid;
+    border-color: white;
+}
+
+/* ========================================
+======================================== */
+
 @media screen and (max-width:768px) {
     .logo-container > a {
     color: ghostwhite;
@@ -86,81 +177,18 @@ nav {
     padding-top: 60px;
     gap: 5vh;
     }
-}
+    /* ========================================
+    ==============Mobile Hero Section============== */
+    #hero-section {
+        display: flex;
+    }
+    .hero-right {
+        flex: 1;
+        order: 1;
+    }
+    .hero-left {
+        order: 2;
+    }
 /* ========================================
 ======================================== */
-
-/* ========================================
-==============Hero Section============== */
-#hero-section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5rem;
-    width: 100%;
-    border-style: solid;
-    border-color: white;
-    background-color: #151515;
-    
 }
-
-#hero-section div {
-    flex: 1;
-}
-.hero-left {
-    border-style: solid;
-    border-color: red;
-    /* display: flex;
-    flex-direction: column; */
-    padding-right: 40px;
-}
-
-.hero-left h1 {
-    font-size: 2.5rem;
-    color: white;
-    border-style: solid;
-    border-color: white;
-    /* padding-left: 15%; */
-    margin: 0;
-}
-
-.hero-left h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    /* padding-left: 15%; */
-    border-style: solid;
-    border-color: white;
-    margin: 0;
-}
-.hero-left button {
-    border-style: solid;
-    border-color: blue;
-    padding: 10px 15px;
-    background: pink;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3 all ease;
-    border-radius: 20px;
-}
-
-.hero-left span {
-    border-style: solid;
-    border-color: white;
-}
-
-.hero-right {
-    border-style: solid;
-    border-color: white;
-}
-
-.hero-right img {
-    border-style: solid;
-    border-color: white;
-}
-
-/* ========================================
-======================================== */
-
-
-
