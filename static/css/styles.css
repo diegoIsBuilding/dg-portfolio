@@ -85,6 +85,9 @@ nav {
     /* padding-left: 6em; */
     
 }
+.intro-container {
+    margin-bottom: 2em;
+}
 .intro-container, .links-container {
     padding-left: 6em;
 }
@@ -93,7 +96,7 @@ nav {
     color: white;
     border-style: solid;
     border-color: white;
-    margin: 0;
+    margin-bottom: .5em;
 }
 
 .hero-left h3 {
@@ -105,9 +108,14 @@ nav {
     margin: 0;
 }
 .links-container {
+    /* this applies to the links contatiner on
+    the left side hero section */
     display: flex;
-    /* justify-content: space-around; */
+    /* align-items: center;
+    justify-content: center; */
     gap: 1em;
+    border-style: solid;
+    border-color: red;
 }
 
 .hero-left button {
@@ -144,12 +152,77 @@ nav {
 .hero-right {
     border-style: solid;
     border-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-right .right-image {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+    border-style: solid;
+    border-color: blue;
+    margin-top: 5%;
 }
 
 .hero-right img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    border-style: solid;
+    border-color: blue;
+    
+}
+.hero-right .right-links-container {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 1em;
+    border-style: solid;
+    border-color: red;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.hero-right span {
     border-style: solid;
     border-color: white;
+    background: lightblue;
+    border-radius: 50%;
+    width: 3em; /* Adjust based on your design */
+    height: 3em; /* Make it equal to width to get a circle */
 }
+.github-link, .linkedin-link {
+    display: flex; /* Establishes this element as a flex container */
+    justify-content: center; /* Centers flex items on the main axis */
+    align-items: center; /* Centers flex items on the cross axis */
+    /* Set a specific height and width to ensure enough space for centering */
+    height: 50px; /* Example height */
+    width: 50px; /* Example width */
+}
+
+/* Optionally, style the <a> tags to ensure they take up the full size of the span for better clickability */
+.github-link a, .linkedin-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Style for the icons themselves, if needed, for size, color, etc. */
+.github-link i, .linkedin-link i {
+    /* Example: change the font-size for larger icons */
+    font-size: 24px; /* Adjust as needed */
+    color: #000; /* Example color - change as needed */
+}
+
+
+
 
 /* ========================================
 ======================================== */
