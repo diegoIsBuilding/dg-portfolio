@@ -71,8 +71,8 @@ nav {
     border-style: solid;
     border-color: white;
     background-color: #151515;
-    padding-left: 6em;
-    padding-right: 6em;
+    /* padding-left: 6em;
+    padding-right: 6em; */
     
 }
 
@@ -82,7 +82,11 @@ nav {
 .hero-left {
     border-style: solid;
     border-color: red;
+    /* padding-left: 6em; */
     
+}
+.intro-container, .links-container {
+    padding-left: 6em;
 }
 .hero-left h1 {
     font-size: 2.5rem;
@@ -188,6 +192,9 @@ nav {
     }
     .hero-left {
         order: 2;
+    }
+    .intro-container, .links-container {
+        padding-left: 0;
     }
 /* ========================================
 ======================================== */
