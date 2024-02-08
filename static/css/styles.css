@@ -12,7 +12,6 @@ html {
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    /* background-color: #151515; */
 }
 /* ========================================
 ===========Navigation Menu============== */
@@ -66,92 +65,69 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 5em;
-    width: 100%;
-    border-style: solid;
-    border-color: white;
-    background-color: #151515;
-    /* padding-left: 6em;
-    padding-right: 6em; */
-    
+    width: auto;
+    background-color: white;
 }
 
 #hero-section div {
     flex: 1;
 }
 .hero-left {
-    border-style: solid;
-    border-color: red;
-    /* padding-left: 6em; */
-    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    /* border-style: solid;
+    border-color: black; */
 }
 .intro-container {
-    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+    /* border-style: solid;
+    border-color: black; */
 }
-.intro-container, .links-container {
-    padding-left: 6em;
-}
+
 .hero-left h1 {
     font-size: 2.5rem;
-    color: white;
-    border-style: solid;
-    border-color: white;
-    margin-bottom: .5em;
+    color: #151515;
+    /* border-style: solid;
+    border-color: black; */
 }
 
 .hero-left h3 {
     font-size: 2rem;
     font-weight: 600;
-    color: white;
-    border-style: solid;
-    border-color: white;
-    margin: 0;
+    color: #151515;
+    /* border-style: solid;
+    border-color: black; */
 }
 .links-container {
-    /* this applies to the links contatiner on
-    the left side hero section */
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    flex-direction: row;
+    /* border-style: solid;
+    border-color: black;  */
     gap: 1em;
-    border-style: solid;
-    border-color: red;
 }
 
 .hero-left button {
     border-style: solid;
-    border-color: blue;
+    border-color: #151515;
     padding: 1em;
-    background: pink;
-    color: #fff;
+    background: #151515;
+    color: white;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3 all ease;
     border-radius: 20px;
     width: 100px;
-    margin-right: 1em;
+    align-items: flex-start; 
+    justify-content: center;
 
-}
-
-.hero-left span {
-    border-style: solid;
-    border-color: white;
-    margin-right: 1em;
-
-    background: lightblue;
-    border-radius: 50%;
-
-    width: 40px; /* Adjust based on your design */
-    height: 40px; /* Make it equal to width to get a circle */
-    display: flex; /* To center the icon inside */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding: 10px; /* Optional, adjust based on your design */
 }
 
 .hero-right {
-    border-style: solid;
-    border-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,9 +138,8 @@ nav {
     height: auto;
     overflow: hidden;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #151515;
     border-style: solid;
-    border-color: blue;
     margin-top: 5%;
 }
 
@@ -174,24 +149,17 @@ nav {
     justify-content: center;
     height: auto;
     width: auto;
-    border-style: solid;
-    border-color: blue;
-    
 }
 .hero-right .right-links-container {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     gap: 1em;
-    border-style: solid;
-    border-color: red;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 .hero-right span {
     border-style: solid;
-    border-color: white;
-    background: lightblue;
+    border-color: #151515;
+    background: white;
     border-radius: 50%;
     width: 3em; /* Adjust based on your design */
     height: 3em; /* Make it equal to width to get a circle */
@@ -214,7 +182,6 @@ nav {
     width: 100%;
 }
 
-/* Style for the icons themselves, if needed, for size, color, etc. */
 .github-link i, .linkedin-link i {
     /* Example: change the font-size for larger icons */
     font-size: 24px; /* Adjust as needed */
