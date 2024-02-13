@@ -22,7 +22,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 
 nav {
     width: 100%;
@@ -56,7 +61,7 @@ nav {
     display: none;
     font-size: 20px;
     font-weight: 800;
-    color: white;
+    color: ghostwhite;
 }
 
 /* ========================================
@@ -77,38 +82,54 @@ nav {
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    /* border-style: solid;
-    border-color: black; */
 }
 .intro-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
     justify-content: center; 
-    /* border-style: solid;
-    border-color: black; */
 }
 
 .hero-left h1 {
     font-size: 2.5rem;
     color: #151515;
-    /* border-style: solid;
-    border-color: black; */
+    margin: 0;
+    padding: 0;
 }
 
 .hero-left h3 {
     font-size: 2rem;
     font-weight: 600;
     color: #151515;
-    /* border-style: solid;
-    border-color: black; */
+    margin: 0;
+    padding-top: 1rem;
 }
+
+/* Typewritter Effect */
+@keyframes blinkCursor {
+    from { border-right-color: #151515; }
+    to { border-right-color: transparent; }
+  }
+  
+  .profession {
+    height: 3.5rem;
+    border-right: 2px solid #151515;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #151515;
+    padding-right: 0.25rem;
+    animation: blinkCursor 0.75s steps(40) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+
 .links-container {
     display: flex;
     flex-direction: row;
-    /* border-style: solid;
-    border-color: black;  */
     gap: 1em;
+    margin-top: 2em;
+    padding: 0;
 }
 
 .hero-left button {
@@ -116,7 +137,7 @@ nav {
     border-color: #151515;
     padding: 1em;
     background: #151515;
-    color: white;
+    color: ghostwhite;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3 all ease;
@@ -124,7 +145,12 @@ nav {
     width: 100px;
     align-items: flex-start; 
     justify-content: center;
-
+    transition: background-color 1s;
+}
+.hero-left button:hover {
+    border-color: #151515;
+    background: ghostwhite;
+    color: #151515;
 }
 
 .hero-right {
@@ -159,42 +185,63 @@ nav {
 .hero-right span {
     border-style: solid;
     border-color: #151515;
-    background: white;
+    background: ghostwhite;
     border-radius: 50%;
-    width: 3em; /* Adjust based on your design */
-    height: 3em; /* Make it equal to width to get a circle */
+    width: 3em; 
+    height: 3em; 
 }
 .github-link, .linkedin-link {
-    display: flex; /* Establishes this element as a flex container */
-    justify-content: center; /* Centers flex items on the main axis */
-    align-items: center; /* Centers flex items on the cross axis */
-    /* Set a specific height and width to ensure enough space for centering */
-    height: 50px; /* Example height */
-    width: 50px; /* Example width */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 50px; 
+    width: 50px; 
 }
-
-/* Optionally, style the <a> tags to ensure they take up the full size of the span for better clickability */
-.github-link a, .linkedin-link a {
+.github-link a, 
+.linkedin-link a,
+.github-link a i,
+.linkedin-link a i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    border-radius: 50%;
+    height: 50px; 
+    width: 50px; 
+    color: #151515;
+    transition: background-color 1s;
 }
-
 .github-link i, .linkedin-link i {
-    /* Example: change the font-size for larger icons */
-    font-size: 24px; /* Adjust as needed */
-    color: #000; /* Example color - change as needed */
+    font-size: 24px; 
+    color: #151515; 
 }
-
-
-
+.linkedin-link:hover a,
+.linkedin-link:hover a i,
+.github-link:hover a,
+.github-link:hover a i{
+    border-color: #151515;
+    background: #151515;
+    color: ghostwhite;
+    border-radius: 50%;
+    height: 50px; 
+    width: 50px; 
+    font-size: 24px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s;
+}
 
 /* ========================================
 ======================================== */
 
 @media screen and (max-width:768px) {
+    .navigation-header {
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        z-index: 1000; 
+    }
+
     .logo-container > a {
     color: ghostwhite;
     text-decoration: none;
@@ -225,6 +272,8 @@ nav {
     ==============Mobile Hero Section============== */
     #hero-section {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .hero-right {
         flex: 1;
@@ -233,9 +282,46 @@ nav {
     .hero-left {
         order: 2;
     }
-    .intro-container, .links-container {
-        padding-left: 0;
+    .hero-left, .hero-right {
+        width: 100%;
+        text-align: center; 
     }
+    .hero-right {
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
+    .hero-right .right-image {
+        width: 80%; 
+        height: 0; 
+        padding-top: 80%; 
+        position: relative; 
+        margin: 0 auto; 
+        border-radius: 50%; 
+        overflow: hidden; 
+    }
+
+    .hero-right .right-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+    }
+    .intro-container, .links-container {
+        align-items: center; 
+    }
+    .hero-left h1, .hero-left h3, .profession {
+        text-align: center; 
+    }
+    .profession {
+        min-width: 250px; 
+        margin: 0 auto; 
+    }
+    body, html {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    
 /* ========================================
 ======================================== */
 }
