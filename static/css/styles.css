@@ -72,6 +72,7 @@ nav {
     align-items: center;
     width: auto;
     background-color: white;
+    height: auto;
 }
 
 #hero-section div {
@@ -88,23 +89,21 @@ nav {
     flex-direction: column;
     align-items: flex-start; 
     justify-content: center; 
+    width: 100%;
+    padding-left: 35%;
 }
 
 .hero-left h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 600;
     color: #151515;
-    margin: 0;
-    padding: 0;
 }
 
 .hero-left h3 {
     font-size: 2rem;
-    font-weight: 600;
     color: #151515;
     margin: 0;
-    padding-top: 1rem;
 }
-
 /* Typewritter Effect */
 @keyframes blinkCursor {
     from { border-right-color: #151515; }
@@ -234,6 +233,21 @@ nav {
 /* ========================================
 ======================================== */
 
+/* ========================================
+==============About Section============== */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    background-color: #151515;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+/* ========================================
+======================================== */
+
 @media screen and (max-width:768px) {
     .navigation-header {
         position: -webkit-sticky; /* For Safari */
@@ -282,9 +296,20 @@ nav {
     .hero-left {
         order: 2;
     }
+    .hero-left h1 {
+        font-size: 2.5rem;
+    }
     .hero-left, .hero-right {
         width: 100%;
         text-align: center; 
+    }
+    .intro-container {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .intro-container h1 {
+        margin-top: 0;
+        margin-bottom: .5rem;
     }
     .hero-right {
         padding-top: 1rem;
