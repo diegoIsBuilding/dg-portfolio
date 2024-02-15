@@ -237,12 +237,65 @@ nav {
 ==============About Section============== */
 #about {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    width: auto;
+    width: 100%;
     background-color: #151515;
     height: 100%;
     margin-top: 5rem;
+}
+.about-me-img {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border-style: solid;
+    border-color: red;
+    width: 50%;
+    height: 100%;
+}
+
+.about-me-img img {
+    border-style: solid;
+    border-color: red;
+    height: 100%;
+    width: auto;
+}
+
+.about-me {
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15%; 
+    width: 50%;
+    flex: 1;
+
+}
+
+.about-me h1 {
+    border-style: solid;
+    border-color: red;
+    margin: 0;
+}
+
+.about-me-text {
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content for about-me and about-me-text */
+    align-items: center;
+    width: 50%;
+    flex: 2;
+
+}
+.about-me-text p {
+    border-style: solid;
+    border-color: red;
+
 }
 
 /* ========================================
@@ -349,4 +402,10 @@ nav {
     
 /* ========================================
 ======================================== */
+
+/* ========================================
+    ==============Mobile About Section============== */
+
+/* ========================================
+======================================== */    
 }
